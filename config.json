@@ -1,5 +1,4 @@
 {
-  "host_server":"",
-  "swift_path":"",
-  "swift_compiled_file_path":""
+  "swift_path":"swfit",
+  "swift_compiled_file_path":"/tmp/_try.swift"
 }

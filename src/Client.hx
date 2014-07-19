@@ -3,7 +3,6 @@ import js.JQuery;
 import haxe.Json;
 
 @:expose class Client {
-//  todo:設定ファイルに移動する
 // syntax hightligt
 // auto insert
 

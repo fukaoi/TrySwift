@@ -17,7 +17,7 @@ class Server {
   }
 
   static function cmd(path:String):Dynamic {
-    var process = new Process("swift", ["-i", path]);
+    var process = new Process(Config.get("swift_path"), ["-i", path]);
     var error = process.stderr.readAll().toString();
     if (error != "") {
       Web.logMessage("Compile Errror");
@@ -28,7 +28,7 @@ class Server {
   }
 
   static function createCodeFile(input:String, func:String -> Dynamic):Dynamic {
-    var fname = "/tmp/test.swift";
+    var fname = Config.get("swift_compiled_file_path");
     var fout = File.write(fname, false);
     fout.writeString(input);
     fout.close();
