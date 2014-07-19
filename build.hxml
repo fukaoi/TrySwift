@@ -1,10 +1,10 @@
 -main Server
 -cp src/
--neko out/release/server.n
+-neko bin/server.n
 -debug
 
 --next
 
 -main Client
 -cp src/
--js html5/js/client.js
+-js view/js/client.js

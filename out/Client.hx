@@ -33,7 +33,7 @@ import haxe.Json;
   public static function ajax(input_code:String):Void{
     untyped $.ajax({
       type: "POST",
-      url: "/out/release/server.n",
+      url: "/bin/server.n",
       data: "input_code=" + input_code,
       success: successAct,
       error: errorAct
